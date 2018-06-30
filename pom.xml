@@ -22,7 +22,7 @@
 
     <groupId>global.namespace.parent-pom</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1</version>
+    <version>2</version>
     <packaging>pom</packaging>
 
     <name>Parent POM</name>
@@ -37,6 +37,24 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    <developers>
+        <developer>
+            <name>Christian Schlichtherle</name>
+            <email>christian AT schlichtherle DOT de</email>
+            <timezone>4</timezone>
+            <roles>
+                <role>owner</role>
+            </roles>
+            <properties>
+                <picUrl>http://www.gravatar.com/avatar/e2f69ddc944f8891566fc4b18518e4e6.png</picUrl>
+            </properties>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/christian-schlichtherle/parent-pom.git</connection>
+        <developerConnection>scm:git:git@github.com:christian-schlichtherle/parent-pom.git</developerConnection>
+        <url>https://github.com/christian-schlichtherle/parent-pom</url>
+    </scm>
 
     <properties>
         <!-- maven-enforcer-plugin -->
