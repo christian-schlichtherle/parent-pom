@@ -245,14 +245,6 @@
                     <version>2.8.2</version>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-ear-plugin</artifactId>
-                    <version>3.0.1</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-ejb-plugin</artifactId>
-                    <version>3.0.1</version>
-                </plugin>
-                <plugin>
                     <artifactId>maven-enforcer-plugin</artifactId>
                     <version>3.0.0-M2</version>
                 </plugin>
