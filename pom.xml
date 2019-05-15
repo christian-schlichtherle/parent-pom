@@ -22,7 +22,7 @@
 
     <groupId>global.namespace.parent-pom</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>8</version>
+    <version>9-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Parent POM</name>
