@@ -82,7 +82,6 @@
 
         <!-- maven-release-plugin -->
         <autoVersionSubmodules>true</autoVersionSubmodules>
-        <preparationGoals>clean install</preparationGoals>
         <releaseProfiles>sonatype-oss-release</releaseProfiles>
         <tagNameFormat>v@{project.version}</tagNameFormat>
         <useReleaseProfile>false</useReleaseProfile>
