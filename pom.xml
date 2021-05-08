@@ -83,14 +83,14 @@
         <splitindex>true</splitindex>
 
         <!-- maven-release-plugin -->
-        <arguments>-Psonatype-oss-release</arguments>
         <autoVersionSubmodules>true</autoVersionSubmodules>
-        <mavenExecutorId>forked-path</mavenExecutorId>
         <preparationGoals>clean install</preparationGoals>
+        <releaseProfiles>sonatype-oss-release</releaseProfiles>
         <tagNameFormat>v@{project.version}</tagNameFormat>
         <useReleaseProfile>false</useReleaseProfile>
 
         <sonatypeOssSnapshotsRepository>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssSnapshotsRepository>
+        <sonatypeProfileName>global.namespace</sonatypeProfileName>
 
         <!-- dependencies -->
         <hamcrest.version>2.2</hamcrest.version>
@@ -376,6 +376,11 @@
                     <artifactId>scalatest-maven-plugin</artifactId>
                     <version>2.0.2</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.7</version>
+                </plugin>
             </plugins>
         </pluginManagement>
 
@@ -592,6 +597,16 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <nexusUrl>https://oss.sonatype.org</nexusUrl>
+                            <serverId>sonatype-nexus-staging</serverId>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
