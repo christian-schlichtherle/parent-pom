@@ -91,8 +91,7 @@
         <sonatypeProfileName>global.namespace</sonatypeProfileName>
 
         <!-- dependencies -->
-        <hamcrest.version>2.2</hamcrest.version>
-        <junit.version>4.13.2</junit.version>
+        <junit-jupiter.version>5.9.2</junit-jupiter.version>
         <logback-classic.version>1.4.8</logback-classic.version>
         <lombok.version>1.18.28</lombok.version>
         <mockito.version>4.11.0</mockito.version>
@@ -138,14 +137,9 @@
                 <version>${logback-classic.version}</version>
             </dependency>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-library</artifactId>
-                <version>${hamcrest.version}</version>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit-jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
@@ -417,13 +411,8 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                    <scope>test</scope>
-                </dependency>
-                <dependency>
-                    <groupId>org.hamcrest</groupId>
-                    <artifactId>hamcrest-library</artifactId>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-api</artifactId>
                     <scope>test</scope>
                 </dependency>
                 <dependency>
