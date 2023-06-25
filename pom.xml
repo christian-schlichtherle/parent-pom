@@ -56,7 +56,7 @@
 
     <properties>
         <!-- maven-enforcer-plugin -->
-        <maven.enforcer.requireJavaVersion>${maven.compiler.target}</maven.enforcer.requireJavaVersion> <!-- forward reference -->
+        <maven.enforcer.requireJavaVersion>${maven.compiler.source}</maven.enforcer.requireJavaVersion> <!-- forward reference -->
         <maven.enforcer.requireMavenVersion>3.6.3</maven.enforcer.requireMavenVersion>
 
         <!-- maven-compiler-plugin -->
